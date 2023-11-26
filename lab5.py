@@ -116,6 +116,7 @@ class Race:
         winner = max(self.participants, key=lambda x:
         x.get_speed() + abs(x.get_age() - average_age))
         return winner
+        
 
 
 def main():
