@@ -5,16 +5,16 @@ lab5.py_corrected.py
 
 class RaceHorse:
     """
-    class
+    class the presenting Race Horse
     """
 
     def __init__(self, speed, age, name, place_in_race=None):
         """
         init
-        :param speed:
-        :param age:
-        :param name:
-        :param place_in_race:
+        :param speed: the speed of the horse
+        :param age: the age of the horse
+        :param name: the name of the horse
+        :param place_in_race: the place in the race
         """
         self.__speed = speed
         self.__age = age
@@ -52,7 +52,7 @@ class RaceHorse:
     def set_place_in_race(self, place):
         """
         set_place_in_race
-        :param place:
+        :param place: place in the race
         :return:
         """
         self.__place_in_race = place
@@ -71,8 +71,8 @@ class Race:
 
     def add__participant(self, horse):
         """
-        add__participant
-        :param horse:
+        add__participant to the race if it meets the age criteria
+        :param horse: the horse to add
         :return:
         """
         if 3 <= horse.get_age() <= 7:
@@ -80,8 +80,8 @@ class Race:
 
     def remove_participant(self, horse):
         """
-        remove_participant
-        :param horse:
+        remove a participant from the race
+        :param horse: the horse to remove
         :return:
         """
         if horse in self.participants:
